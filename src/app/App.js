@@ -15,8 +15,8 @@ const getFilteredItems = (items, searchTerm) => {
 export const App = (props) => {
 
   const { state, dispatch } = props;
-  
-  const{ inventory, currencyFilter, searchTerm } = state;
+  // removing currencyFilter,
+  const{ inventory, searchTerm } = state;
   const filteredInventory = getFilteredItems(inventory, searchTerm);
 
   
